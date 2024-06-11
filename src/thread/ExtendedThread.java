@@ -5,12 +5,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ExtendedThread extends Thread {
-	private static Logger logger = Logger.getLogger("myLogger");
-	private Long sleepTime;
+	private static Logger logger = Logger.getLogger(Thread.class.getName());
+	//private Long sleepTime;
 	private boolean condition = true;
 	public ExtendedThread(long sleepTime) {
 		super();
-		this.sleepTime  = sleepTime;
+		//this.sleepTime  = sleepTime;
 	}
 	
 	public void setCondition(boolean condition) {
